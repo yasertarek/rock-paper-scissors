@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-ajTna1XfB)
 - Live Site URL: [Live Demo](https://yasertarek.github.io/rock-paper-scissors/index.html)
 
 ## My process
