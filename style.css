@@ -16,7 +16,7 @@ body{
 }
 main{
     position: relative;
-    overflow: hidden;
+    margin-top: 10rem;
 }
 header.header{
     border: 5px solid hsl(217, 16%, 45%);
@@ -58,7 +58,7 @@ header.header{
 .game-body{
     width: 30rem;
     min-height: 26.25rem;
-    margin: 15rem auto 0;
+    margin: auto;
     position: relative;
 }
 .bg-triangle{
@@ -383,6 +383,14 @@ header.header{
         height: 14.5rem;
         border-radius: 50%;
     }
+    .game-body__big-circle--s4{
+        width: 25rem;
+        height: 25rem;
+    }
+    .game-body__tiny-circle--s4{
+        width: 20rem;
+        height: 20rem;
+    }
     .game-body__circle-container-paper{
         top: -8rem;
     }
@@ -397,12 +405,9 @@ header.header{
     }
     .rules-btn{
         margin: -7rem 3rem 4rem auto;
-        /* position: absolute;
-        right: 3rem;
-        bottom: 3rem; */
     }
     .content-icon{
-        transform: translate(-50%, -50%) scale(1.25);
+        transform: translate(-50%, -50%) scale(1.75);
     }
     .game-body__big-circle:hover{
         transform: scale(1.09) translateY(-5px);
@@ -421,22 +426,17 @@ header.header{
         height: 15rem;
     }
     .rules-popup{
-        /* position: fixed; */
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         width: auto;
         height: auto;
-        /* background-color: #eee;
-        display: flex; */
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         padding: 2rem;
         border-radius: 8px;
-        /* clip-path: circle(0 at 50% 50%);
-        transition: all 0.5s ease-in-out; */
         backdrop-filter: opacity(20%);
     }
     .rules-popup--active{
@@ -537,8 +537,8 @@ header.header{
     .game-over-container{
         position: absolute;
         left: 50%;
-        top: 0;
-        transform: translateX(-50%);
+        top: 12.5rem;
+        transform: translate(-50%, -50%);
     }
     .btn:hover{
         color: hsl(349, 71%, 52%);

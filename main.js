@@ -165,6 +165,14 @@ function gameOver(state, hUser1, hCom1){
         // document.querySelector('main').insertBefore(playAgain, document.querySelector('.rules-btn'));
         document.querySelector('.choosed-item--user').classList.add('choosed-item--user--s4');
         document.querySelector('.choosed-item--com').classList.add('choosed-item--com--s4');
+        // document.querySelector('.game-body__big-circle').classList.add('game-body__big-circle--s4');
+        // document.querySelector('.game-body__tiny-circle').classList.add('game-body__tiny-circle--s4');
+        Array.from(document.querySelectorAll('.game-body__big-circle')).forEach((e)=>{
+            e.classList.add('game-body__big-circle--s4');
+        });
+        Array.from(document.querySelectorAll('.game-body__tiny-circle')).forEach((e)=>{
+            e.classList.add('game-body__tiny-circle--s4');
+        });
 
     }, 1500)
     playAgain.addEventListener('click', ()=>{initGame(btn=playAgain, heading=heading, hUser=hUser1, hCom=hCom1, gmovCon=gameOverCont)});
@@ -173,7 +181,13 @@ function initGame(btn,heading,hUser,hCom,gmovCon){
     document.querySelector('.bg-triangle').classList.remove('bg-triangle--s2');
     document.querySelector('.choosed-item--com__bg-circle').classList.remove('choosed-item--com__bg-circle--s2');
     document.querySelector('.choosed-item--user').classList.remove('choosed-item--user--s4');
-        document.querySelector('.choosed-item--com').classList.remove('choosed-item--com--s4');
+    document.querySelector('.choosed-item--com').classList.remove('choosed-item--com--s4');
+    Array.from(document.querySelectorAll('.game-body__big-circle')).forEach((e)=>{
+        e.classList.remove('game-body__big-circle--s4');
+    });
+    Array.from(document.querySelectorAll('.game-body__tiny-circle')).forEach((e)=>{
+        e.classList.remove('game-body__tiny-circle--s4');
+    });
     gameItemsCont.forEach((e)=>{
         if(e.className.includes('choosed-item--user')){
             for(let i = 1; i <= 3; i++){
