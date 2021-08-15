@@ -16,6 +16,7 @@ body{
 }
 main{
     position: relative;
+    overflow: hidden;
 }
 header.header{
     border: 5px solid hsl(217, 16%, 45%);
